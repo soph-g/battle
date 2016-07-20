@@ -7,7 +7,6 @@ class Player
   def initialize(name)
     @name = name
     @hit_points = DEFAULT_HIT_POINTS
-    @game = Game.new
   end
 
   def receive_damage
