@@ -31,4 +31,12 @@ class Game
     @attacking = @current_turn
   end
 
+  def self.create(player_1_name, player_2_name)
+    @game = Game.new(player_1_name, player_2_name)
+  end
+
+  def self.instance
+    @game
+  end
+
 end
