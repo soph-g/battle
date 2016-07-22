@@ -2,7 +2,7 @@
 <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-
+<div class = "attack">
 <body style="width: 500px; margin: 30px auto; text-align: center;">
 
 <h1><%=@game.player1.name%> vs. <%=@game.player2.name%></h1>
@@ -26,6 +26,7 @@
   <p><%= @game.player2.name%> attacked <%= @game.player1.name%></p>
   <p><%= @game.player1.name%> has <%=@game.player1.hitpoints %>hp </p>
 <% end %>
+</div>
 </div>
 
 </body>

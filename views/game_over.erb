@@ -6,9 +6,9 @@
 <body style="width: 500px; margin: 30px auto; text-align: center;">
   <h1>GAME OVER</h1>
 
-  <% if @game.player1.hitpoints == 0 %>
+  <% if @game.player1.hitpoints <= 0 %>
     <p><%= @game.player2.name.upcase%> WINS!!</p>
-  <% elsif @game.player2.hitpoints == 0 %>
+  <% elsif @game.player2.hitpoints <= 0 %>
     <p><%= @game.player1.name.upcase%> WINS!!</p>
   <% end %>
 
